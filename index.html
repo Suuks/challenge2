@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+		<meta name="viewport" content=" width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="time.css">
+    <title>Time on Earth</title>
+	<script src="main.js">
+	<!--staat in main.JS: onder de title-->
+	</script>
+  </head>
+  <body onload="achtergrondKleur()">
+			<figure>
+			 <img src="images\aardbol.png" alt="aardbol"> 
+		</figure>
+	<div id="container">
+		<h1> TIJD OP AARDE </h1></div>
+	</div>
+	<div id="container">
+		<canvas  id="canvas" width="400" height="400" style="background-color:#333"></canvas>			
+	</div>
+	    <script src="main.js">
+		<!--staat in main.JS: onder container div-->
+		</script>	
+	</div>
+		<span id="datetime"></span>
+		<script>
+		//krijg ik niet aan de praat in de main.js dus ik laat 'm lekker hier//
+		var dt = new Date();
+			document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) ;
+		</script>
+  </body>
+</html>
